@@ -8,7 +8,7 @@ install:
   - ps: cd fe
   # install modules
   - npm install
-  - gulp buld
+  - gulp build
 # Post-install test scripts.
 
 # Don't actually build.
