@@ -1,0 +1,16 @@
+<div>
+  item listing
+  <ul>
+    <li data-ng-repeat='v in items'>
+      {{v.name}}
+    </li>
+    <input type="text" data-ng-model='id' />
+    <a data-ng-click='getItem()'>get item</a>
+    <div data-ng-if='store == undefined'>
+    	Store with id {{$id}} not found
+    </div>
+    <div data-ng-if='store != undefined'>
+    	{{store.store_name}}
+    </div>
+  </ul>
+</div>
