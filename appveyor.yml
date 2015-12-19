@@ -8,4 +8,4 @@ install:
   - ps: cd fe
   # install modules
   - npm install
-  - gulp build
+  - ./node_modules/gulp/bin/gulp.js build
