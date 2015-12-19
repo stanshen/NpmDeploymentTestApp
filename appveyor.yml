@@ -8,8 +8,6 @@ install:
   - ps: cd fe
   # install modules
   - npm install
-  - bower install
-  - gulp build
 # Post-install test scripts.
 test_script:
   # Output useful info for debugging.
