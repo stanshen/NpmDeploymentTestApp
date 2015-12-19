@@ -8,6 +8,4 @@ install:
   - ps: cd fe
   # install modules
   - npm install
-
-build:
   - gulp build
