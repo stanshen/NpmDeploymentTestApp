@@ -48,11 +48,15 @@ gulp.task('watch', ['scripts', 'browserify', 'styles', 'html'], function(){
   
 });
 
-gulp.task('serve', ['scripts', 'browserify', 'styles', 'html'], function(){
+gulp.task('build', ['scripts', 'browserify', 'styles', 'html'], function(){
+})
+
+gulp.task('serve', ['build'], function(){
   var app = express();
   app.use(express.static('./build/html'));
   app.listen(3000);
 })
+
 
 
 gulp.task('default', ['html', 'scripts', 'styles', 'browserify', 'watch', 'serve']);
